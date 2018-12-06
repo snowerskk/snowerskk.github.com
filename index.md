@@ -1,37 +1,64 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/snowerskk/snowerskk.github.com/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# Markdown语法
+***
+## 标题(井号后面带空格)
+# 这是一级标题
+## 这是二级标题
+### 这是三级标题
+#### 这是四级标题
+##### 这是五级标题
+###### 这是六级标题
+***
+## 文本
+**这是加粗的文本**
+*这是倾斜的文本*
+***这是倾斜并加粗的文本***
+~~这是加删除线的文本~~
+***
+## 图片
+![alt](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544073256213&di=9c2d9268a834710540938793bd61ec41&imgtype=0&src=http%3A%2F%2Fimgtianqi.eastday.com%2Fres%2Fupload%2Fue%2Fimage%2F20181126%2F1543221414244996.jpg "这是个图片")
+***
+## 超链接
+[码云](https://gitee.com/snowerskk "可省略的title")
+***
+## 列表
+- 无序列表1
++ 无序列表2
+* 无序列表3
+***
+- 一级列表(敲三个空格进行嵌套)   
+1.二级有序列表
+2.二级有序列表
+3.二级有序列表
+***
+## 引用
+>一个箭头的引用
+>>两个箭头的引用
+>>>>多个箭头的引用
+***
+## 表格
+|名目|写法|备注|
+|:-|:-:|-:|
+|语法1|表格内容用竖线包起来，模拟表格样式|-|
+|语法2|单元格宽度会随着内容自动撑开|-|
+|语法3|默认隔行变色|-|
+|语法4|表头下加一行减号横线，用以分隔表头|数量一个以上不等|
+|语法5|冒号用来对齐，加在哪边就向哪边对齐|加在分割线的两边|
+***
+## 代码
+`window.alert('代码用反引号包起来，像es6字符串')`
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/snowerskk/snowerskk.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+	function alert(){
+		console.log('代码块用前后各用三个反引号包起来');
+	}
+```
+```javascript
+//指定语法，对代码高亮着色
+var num = 0;
+for (var i = 0; i < 5; i++) {
+    num+=i;
+}
+console.log(num);
+```
+***
+## html
+<div style="width:100px;background: blue;color:white;padding:2px;">支持html语言及内联样式</div>
